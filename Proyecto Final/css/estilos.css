@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+main{
+    flex:1;
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.hero{
+    text-align:center;
+    padding:60px;
+    background:white;
+}
+
+section{
+    padding:40px;
+}
+
+.tarjeta{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+}
+
+.api{
+    text-align:center;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    background:#003366;
+    color:white;
+    cursor:pointer;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:10px 0;
+    margin-top:auto;
+}
+
+footer p{
+    margin:0;
+}
+
+body{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded{
+    opacity: 1;
+}
+
+@media(max-width:768px){
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+}
